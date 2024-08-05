@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffba4b;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.social-media-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #555;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    transition: background-color 0.3s;
+}
+
+.icon:hover {
+    background-color: #333;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.icon:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Specific Colors for Each Icon */
+.icon.facebook {
+    background-color: #3b5998;
+}
+
+.icon.facebook:hover {
+    background-color: #2d4373;
+}
+
+.icon.twitter {
+    background-color: #1da1f2;
+}
+
+.icon.twitter:hover {
+    background-color: #0d95e8;
+}
+
+.icon.instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+
+.icon.instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 100%);
+}
+
+.icon.linkedin {
+    background-color: #0077b5;
+}
+
+.icon.linkedin:hover {
+    background-color: #005582;
+}
